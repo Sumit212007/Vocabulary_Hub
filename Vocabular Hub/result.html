@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Quiz</title>
+    <link rel="stylesheet" href="css-file/result/result.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vocabulary Score</h1>
+            <p>You are doing really great keep going!</p>
+        </div>
+        <div class="content-grid">
+            <div class="sidebar-left">
+                <div class="menu-item">
+                    <div class="menu-icon icon-blue">✂️</div>
+                    <div class="menu-label"><a href="index.html">Home</a></div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon icon-purple">❓</div>
+                    <div class="menu-label">Comment Section</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon icon-green">✓</div>
+                    <div class="menu-label">User</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon icon-indigo">🎮</div>
+                    <div class="menu-label"><a href="about.html">About</a></div>
+                </div>
+            </div>
+
+            <!-- Main Card -->
+            <div class="main-card">
+                <div class="card-header">
+                    <h2>Correct Answers</h2>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-label"></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="score-display">
+                    <div class="score-item">
+                        <div class="score-icon correct">
+                            <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="score-text">
+                            <div class="score-number">0</div>
+                            <div class="score-label">Correct Answers</div>
+                        </div>
+                    </div>
+
+                    <div class="score-item">
+                        <div class="score-icon unclear">
+                            <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                            </svg>
+                        </div>
+                        <div class="score-text">
+                            <div class="score-percentage">0%</div>
+                            <div class="score-label">Percentage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="play-button"><a href="vocab.html">Play Again</a></button>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="sidebar-right">
+                <div class="info-card blue">
+                    <div class="Question-icon">📅</div>
+                    <div class="Question-box">
+                        Total Questions<br>
+                        <span id="totalQuestions">0</span>
+                    </div>
+                </div>
+
+                <div class="info-card red">
+                    <div class="info-icon">❌</div>
+                    <div class="info-title">Wrong Answers</div>
+                    <div class="info-text">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js-file/result/result.js"></script>
+</body>
+</html>

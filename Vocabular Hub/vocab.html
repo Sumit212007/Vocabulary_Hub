@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css-file/vocab/style.css">
+    <link rel="stylesheet" href="css-file/vocab/popup.css">
+    <link rel="stylesheet" href="css-file/vocab/option.css">
+</head>
+<body>
+    <div class="score-box">
+        <button class="score correct-score">Correct: <span id="correctCount">0</span></button>
+        <button class="score wrong-score">Wrong: <span id="wrongCount">0</span></button>
+        <button class="score reset-score" id="resetBtn">Reset<span id="resetCount"></span></button>
+        <button class="score stop-score" id="stopBtn"><a href="result.html">Score box</a></button>
+    </div>
+
+    <div class="container">
+        <h2 class="question-title">Choose the correct meaning</h2>
+
+        <div class="question-box">
+            <p id="question">Question</p>
+            <button id="speakBtn"><i id="volume-icon" class="fa-solid fa-volume-high"></i></button>
+        </div>
+
+        <div class="options">
+            <button class="option-btn"></button>
+            <button class="option-btn"></button>
+            <button class="option-btn"></button>
+            <button class="option-btn"></button>
+        </div>
+
+        <div id="popup" class="popup">
+            <p id="popup-text"></p>
+            <button id="nextBtn">Next</button>
+        </div>
+
+    </div>
+    <script type="module" src="js-file/vocab/script.js"></script>
+    <script src="js-file/vocab/speak.js"></script>
+</body>
+</html>
