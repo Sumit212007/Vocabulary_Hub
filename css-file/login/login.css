@@ -200,6 +200,7 @@ input.error {
 }
 
 @media (max-width: 480px) {
+    background-image: url(mobile.jpg);
     .login-container {
         padding: 40px 30px;
     }
@@ -207,4 +208,5 @@ input.error {
     .header {
         font-size: 28px;
     }
+
 }
