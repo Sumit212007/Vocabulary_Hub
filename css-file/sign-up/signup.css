@@ -178,9 +178,9 @@ button:active {
 @media (max-width: 480px) {
     body {
         background-attachment: fixed;
+        background-image: url(mobile.jpg);
         padding: 15px;
     }
-    background-image: url(mobile.jpg);
     
     .sign-box {
         padding: 30px 24px;
@@ -195,3 +195,4 @@ button:active {
     }
 
 }
+
